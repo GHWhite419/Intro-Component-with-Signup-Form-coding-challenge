@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="app.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+
+<body>
+  <main>
+    <article>
+      <header>
+        <h1>Learn to code by watching others</h1>
+
+        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+          but understanding how developers think is invaluable.</p>
+      </header>
+      <section>
+        <div class="trial">
+          <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+        </div>
+        <form action="">
+          <input type="text" class="firstname" placeholder="First Name">
+          <p class="error-msg error-hide">First Name cannot be empty</p>
+          <input type="text" class="lastname" placeholder="Last Name"> 
+          <p class="error-msg error-hide">Last Name cannot be empty</p>
+          <input type="email" class="email" placeholder="Email Address"> 
+          <p class="error-msg error-hide">Looks like this is not an email</p>
+          <input type="password" class="password" placeholder="Password"> 
+          <p class="error-msg error-hide">Password cannot be empty</p>
+          <button type="button">Claim your free trial</button>
+          <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+        </form>
+      </section>
+    </article>
+  </main>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by Galen White.
+    </p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+
+</html>

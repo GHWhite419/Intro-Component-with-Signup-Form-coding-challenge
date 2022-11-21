@@ -1,0 +1,239 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Galen's code */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url(images/bg-intro-mobile.png), hsl(0, 100%, 74%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    max-width: 23rem;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+header p {
+    padding: 1rem 0rem;
+}
+
+.trial {
+    color: white;
+    background-color: hsl(248, 32%, 49%);
+    text-align: center;
+    padding: 1.5rem 4rem;
+    border-radius: .7rem;
+    margin-bottom: 1.5rem;
+
+    box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.trial span {
+    font-weight: 600;
+}
+
+form {
+    background: white;
+    border-radius: .5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    padding: 1rem;
+    margin: .5rem;
+    border-radius: .4rem;
+    border-style: solid;
+    font-weight: 600;
+}
+
+input::placeholder {
+    font-weight: 500;
+}
+
+.input-error {
+    border-color: hsl(0, 100%, 74%);
+    color: hsl(0, 70%, 78%);
+    background: url(images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: 17rem;
+}
+
+.error-msg {
+    color: hsl(0, 70%, 78%);
+    text-align: right;
+    padding: 0;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.error-hide {
+    display: none;
+}
+
+button {
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    text-transform: uppercase;
+    padding: 1rem;
+    border-radius: .5rem;
+    letter-spacing: .1rem;
+    font-weight: 500;
+    border: solid;
+    margin-top: .5rem;
+
+    box-shadow: 0px -5px 0px -1px rgba(0, 0, 0, 0.16) inset;
+    -webkit-box-shadow: 0px -5px 0px -1px rgba(0, 0, 0, 0.16) inset;
+    -moz-box-shadow: 0px -5px 0px -1px rgba(0, 0, 0, 0.16) inset;
+}
+
+button:active {
+    filter: brightness(1.1)
+}
+
+form p {
+    text-align: center;
+    color: hsl(246, 25%, 77%);
+    font-size: .8em;
+    padding: .5rem 2rem;
+}
+
+form span {
+    color: hsl(0, 70%, 78%);
+    font-weight: 700;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: relative;
+    bottom: -1rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 900px) {
+    main {
+        max-width: none;
+    }
+
+    article {
+        display: flex;
+        align-items: center;
+        padding: 0rem 7rem;
+    }
+
+    header {
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    form p {
+        font-size: .7rem;
+    }
+
+    .input-error {
+        background-position: 24.5rem;
+    }
+
+}
